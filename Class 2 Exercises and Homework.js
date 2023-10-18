@@ -61,7 +61,9 @@ console.log(arr[2]);
 // Hints:
 // - Use rubular to check a few emails: https://rubular.com/
 // - Use regexp test method https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
-
+let myEmail = "foo@bar.baz";
+let testExp = /([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}/
+console.log(testExp.test(myEmail));
 
 // 7. You are given an assignmentDate as a string in the format "month/day/year"
 // i.e. '1/21/2019' - but this could be any date.
@@ -89,6 +91,8 @@ console.log("Step 8 Date:", dueDate);
 // 9. Use dueDate values to create an HTML time tag in format
 // <time datetime="YYYY-MM-DD">Month day, year</time>
 // I have provided a months array to help
+
+// ONly utilize the values of the Due Date and create a HTML Content
 const months = [
   'January',
   'February',
