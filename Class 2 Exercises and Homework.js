@@ -9,16 +9,8 @@ const lucyBouffiou = {
   lastName: 'Bouffiou',
   'favorite food': 'Oysters'
 }
-const spencerHicks = {
-  firstName: 'Spencer',
-  lastName: 'Hicks',
-  'favorite food': 'Salami'
-}
-const toryGoranson = {
-  firstName: 'Tory',
-  lastName: 'Goranson',
-  'favorite food': 'Filet Mignon'
-}
+
+
 const kyleCreek = {
   firstName: 'Kyle',
   lastName: 'Creek',
@@ -107,6 +99,12 @@ const months = [
   'November',
   'December'
 ];
+// Assign the Values to Variables for the Dyanmic String Output. 
+let htmlDay = dueDate.getDate();
+let htmlMonth = months[dueDate.getMonth()];
+let htmlYear = dueDate.getFullYear();
 
+let htmlTime = `<time datetime="YYYY-MM-DD">${htmlMonth} ${htmlDay}, ${htmlYear}</time>`
 
 // 10. log this value using console.log
+console.log(htmlTime);
